@@ -5,6 +5,9 @@ import random
  
 import time
 from time import sleep
+from keep_alive import keep_alive
+
+keep_alive() 
 
 api_id = 17899889
 api_hash = "89da681d42f98b7ceb90b53ae458ca77"
@@ -13,7 +16,7 @@ app = Client("my_account", api_id = api_id, api_hash = api_hash)
 
 @app.on_message(filters.command("help", prefixes=".") & filters.me)
 def help(_, msg):
-    msg.reply("<b>😈 <a href='https://t.me/Fsure123'>Hagi Vage USER BOT</a> 😈</b>\n\n<code>.type1</code> - send msg per 30 sec\n<code>.type2</code> - send msg per 1 min\n<code>.type3</code> - send msg per 5 mins\n<code>.type4</code> - send msg per 10 mins\n<code>.type5</code> - send msg per 20 mins\n<code>.type6</code> - send msg per 1 hour")
+    msg.reply("<b>😈 <a href='https://t.me/Fsure123'>Hagi Vage USER BOT</a> 😈</b>\n\n<code>.type1</code> - send msg per 30 sec\n<code>.type2</code> - send msg per 1 min\n<code>.type3</code> - send msg per 5 mins\n<code>.type4</code> - send msg per 10 mins\n<code>.type5</code> - send msg per 20 mins\n<code>.type6</code> - send\n<code>.ghoul</code> - 1000-7 TbI Ghoul")
 
 @app.on_message(filters.command("type", prefixes=".") & filters.me)
 def type(_, msg):
