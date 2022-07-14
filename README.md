@@ -8,6 +8,10 @@
 - pip install random
 - pip install keep-alive
 
+Далее утсанвоим скрипт в термуксе
+
+git clone https://github.com/ITteenager/UserBotTgHageVage
+
 Далее пишем
 
 - python main.py
