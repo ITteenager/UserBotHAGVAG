@@ -6,6 +6,7 @@
 - pip install time
 - pip install pyrogram
 - pip install random
+- pip install keep-alive
 
 Далее пишем
 
